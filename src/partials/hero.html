@@ -1,0 +1,98 @@
+<section class="hero" lang="en">
+  <div class="hero__container container">
+    <div class="hero__about">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title-font">passion</span>
+      </h1>
+      <div class="hero__buttons">
+        <a class="hero__btn-about link" href="#products"> Products </a>
+        <a class="hero__btn-description link" href="#about"> How it's made? </a>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="./images/ice-pc-min.png 1x, ./images/ice-pc@2x-min.png 2x"
+        media="(min-width: 1200px)"
+      >
+      <source
+        srcset="./images/ice-tab-min.png 1x, ./images/ice-tab@2x-min.png 2x"
+        media="(min-width: 768px)"
+      >
+      <source
+        srcset="./images/ice-mob-min.png 1x, ./images/ice-mob@2x-min.png 2x"
+        media="(max-width: 767px)"
+      >
+      <img
+        class="hero__main-img"
+        src="./images/ice-mob-min.png"
+        alt="photo-ice"
+      >
+    </picture>
+    <picture>
+      <source
+        srcset="./images/ice-smile-pc.png 1x"
+        media="(min-width: 1200px)"
+      >
+      <source
+        srcset="./images/ice-smile-tab.png 1x"
+        media="(min-width: 768px)"
+      >
+      <source
+        srcset="./images/ice-smile-mob.png 1x"
+        media="(max-width: 767px)"
+      >
+      <img
+        class="hero__main-smile"
+        src="./images/ice-smile-mob.png"
+        alt="photo-ice"
+      >
+    </picture>
+    <div class="hero__visual">
+      <picture>
+        <source
+          srcset="./images/d-plate-x1.png 1x, ./images/d-plate-x2.png 2x"
+          media="(min-width: 1200px)"
+        >
+        <source
+          srcset="./images/t-plate-x1.png 1x, ./images/t-plate-x2.png 2x"
+          media="(min-width: 768px)"
+        >
+        <source
+          srcset="./images/t-plate-x1.png 1x, ./images/t-plate-x2.png 2x"
+          media="(max-width: 767px)"
+        >
+        <img
+          class="hero__plate-img"
+          src="./images/t-plate-x1.png"
+          alt="ice-on-plate"
+        >
+      </picture>
+      <div class="hero__plate-watch">
+        <span class="hero__plate">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </span>
+        <span class="product__button">
+          <span class="product__button-icon">
+            <svg width="40" height="14" class="hero__aroow">
+              <use
+                class="hero__icon"
+                href="./images/symbol-defs.svg#arrow-default"
+              ></use>
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <ul class="hero__cafe-list">
+      <li class="hero__list-item list">
+        <strong class="hero__list-amount">16</strong>
+        <span class="hero__list-value">cafes</span>
+      </li>
+      <li class="hero__list-item list">
+        <strong class="hero__list-amount">24</strong>
+        <span class="hero__list-value">food trucks</span>
+      </li>
+    </ul>
+  </div>
+</section>

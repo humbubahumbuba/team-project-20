@@ -1,0 +1,232 @@
+.contacts {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 26%,
+    #84a178 10%,
+    #84a178 64%
+  );
+  padding-bottom: 39px;
+  margin-bottom: -1px;
+}
+
+.contacts__item {
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  height: auto;
+}
+
+.contacts__title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: var(--blackText);
+  text-align: center;
+  border-radius: 4px;
+  width: 80px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background-color: var(--yellowText);
+}
+
+#contacts_title {
+  width: 130px;
+}
+
+.contacts__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: var(--blackText);
+  margin-bottom: 8px;
+}
+
+.datatime_list__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: var(--blackText);
+}
+.contacts__time {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ababab;
+}
+.contacts__address {
+  margin-bottom: 48px;
+}
+
+.address__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  color: var(--milkshakes);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.contacts__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--blackText);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--milkshakes);
+  }
+}
+
+.contacts__datatime_list {
+  margin-bottom: 48px;
+}
+.contacts__address::after,
+.contacts__datatime_list::after {
+  content: '';
+  position: relative;
+  display: block;
+  bottom: -24px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+}
+
+.contacts__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@media screen and(max-width:767px) {
+  .contacts__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .contacts__item {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    padding: 40px 32px;
+  }
+
+  .datatime_list__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .contacts__list {
+    width: 100%;
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__item {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 224px;
+    padding: 40px 24px;
+  }
+
+  .contacts__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    border-radius: 6px;
+    width: 75px;
+    margin-bottom: 32px;
+  }
+
+  #contacts_title {
+    width: 138px;
+  }
+  .contacts__address {
+    margin-bottom: 64px;
+  }
+  .contacts__address::after,
+  .contacts__datatime_list::after {
+    content: '';
+    position: relative;
+    display: block;
+    bottom: -24px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+  }
+
+  .contacts__subtitle {
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .datatime_list__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .contacts__datatime_list {
+    margin-bottom: 64px;
+  }
+
+  .address__link,
+  .datatime_list__subtitle,
+  .contacts__time {
+    font-size: 14px;
+  }
+  .contacts__link {
+    font-size: 14px;
+    line-height: 183%;
+  }
+  .contacts__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .contacts__list {
+    width: 100%;
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 64px;
+  }
+  .contacts__item {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 368px;
+    padding: 40px;
+  }
+  .contacts__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .contacts__address::after,
+  .contacts__datatime_list::after {
+    content: '';
+    bottom: -32px;
+  }
+  .address__link,
+  .contacts__link,
+  .datatime_list__subtitle,
+  .contacts__time {
+    font-size: 16px;
+  }
+}

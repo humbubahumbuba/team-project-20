@@ -1,0 +1,148 @@
+.product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 84px;
+    margin-bottom: 24px;
+}
+
+.product-list__item-checked {
+    background-color: transparent;
+    position: absolute;
+    top: 95px;
+    left: 15px;
+    border-radius: 16px;
+
+}
+
+.product-list__item {
+    position: relative;
+    width: 132px;
+    height: 136px;
+    border-radius: 16px;
+
+
+
+    &::before {
+        position: absolute;
+        top: -64px;
+        left: -2px;
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+}
+
+.modal-form__checkbox:focus,
+.modal-form__checkbox:hover {
+    cursor: pointer;
+}
+
+.product-list__item:first-child {
+    border: 2px solid #96AF8C;
+
+    &::before {
+        content: '';
+        background-image: url('/src/images/buy-modal-icecrema-tel-1x-min.jpg');
+        background-repeat: no-repeat;
+        width: 132px;
+        height: 132px;
+        box-shadow: 0px 8px 0px var(--tintIcecream);
+    }
+
+    .modal-form__checkbox:checked {
+        background-color: #96AF8C;
+    }
+}
+
+.product-list__item:nth-child(2) {
+    border: 2px solid #EFD478;
+
+    &::before {
+        content: '';
+        background-image: url('/src/images/buy-modal-icecoffee-tel-1x-min.jpg');
+        width: 132px;
+        height: 132px;
+        box-shadow: 0px 8px 0px var(--tintIcecoffee);
+    }
+
+    .modal-form__checkbox:checked {
+        background-color: #EFD478;
+    }
+
+}
+
+
+.product-list__item:last-child {
+    border: 2px solid #D6936D;
+
+    &::before {
+        content: '';
+        background-image: url('/src/images/buy-modal-milkshake-tel-1x-min.jpg');
+        width: 132px;
+        height: 132px;
+        box-shadow: 0px 8px 0px var(--tintMilkshake);
+
+    }
+
+    .modal-form__checkbox:checked {
+        background-color: #D6936D;
+    }
+}
+
+.product-list__name {
+    display: block;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.modal-form__checkbox {
+    width: 101%;
+    height: 101%;
+    border-radius: 14px;
+    appearance: none;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .product-list__item:first-child::before {
+        background-image: url('/src/images/buy-modal-icecrema-tel-2x-min.jpg');
+    }
+
+    .product-list__item:nth-child(2)::before {
+        background-image: url('/src/images/buy-modal-icecoffee-tel-2x-min.jpg');
+    }
+
+    .product-list__item:last-child::before {
+        background-image: url('/src/images/buy-modal-milkshake-tel-2x-min.jpg');
+    }
+}
+
+@media screen and (min-width:481px) {
+    .product-list {
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .product-list__item:first-child::before {
+        background-image: url('/src/images/buy-modal-icecrema-desk-2x-min.jpg');
+    }
+
+    .product-list__item:nth-child(2)::before {
+        background-image: url('/src/images/buy-modal-icecoffee-desk-2x-min.jpg');
+    }
+
+    .product-list__item:last-child::before {
+        background-image: url('/src/images/buy-modal-milkshake-desk-2x-min.jpg');
+    }
+}

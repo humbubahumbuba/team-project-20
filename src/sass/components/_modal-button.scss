@@ -1,0 +1,15 @@
+.btn-close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+    }
+}

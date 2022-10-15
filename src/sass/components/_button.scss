@@ -1,0 +1,413 @@
+.product-btn {
+  width: 134px;
+  height: 42px;
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+.product-btn__mob {
+  width: 64px;
+  height: 24px;
+  border: solid 2px var(--BTN);
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  transition: color var(--duration) var(--cubic),
+    background-color var(--duration) var(--cubic),
+    border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+.made-btn {
+  width: 154px;
+  height: 40px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: var(--BTN);
+  cursor: pointer;
+  transition: color var(--duration) var(--cubic),
+    background-color var(--duration) var(--cubic),
+    border-color var(--duration) var(--cubic);
+
+  &:hover {
+    color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+  &:disabled {
+    color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+.made-btn__mob {
+  width: 82px;
+  height: 24px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: var(--BTN);
+  cursor: pointer;
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+  &:disabled {
+    color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+// =========button use for all devices==========
+.read-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  width: 164px;
+  height: 42px;
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: black;
+  background-color: var(--BTN);
+  cursor: pointer;
+  transition: color var(--duration) var(--cubic),
+    background-color var(--duration) var(--cubic),
+    border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+    border-color: rgba(10, 136, 23, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    background-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+.location-btn {
+  width: 196px;
+  height: 42px;
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  background-color: var(--BTN);
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+    border-color: rgba(10, 136, 23, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    background-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+.franchise-btn {
+  width: 196px;
+  height: 42px;
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+    border-color: rgba(10, 136, 23, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+
+  // class used in modal button; added for disabled btn style
+  .modal-form &:disabled {
+      border-color: var(--disabledBTN);
+      background-color: var(--disabledBTN);
+      cursor: default;
+  }
+}
+
+.buy-btn {
+  width: 152px;
+  height: 42px;
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  background-color: var(--BTN);
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: rgba(10, 136, 23, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+    background-color: rgba(10, 136, 23, 1);
+  }
+  &:disabled {
+    border-color: rgba(171, 171, 171, 1);
+    background-color: rgba(171, 171, 171, 1);
+    cursor: default;
+  }
+}
+
+// MODAL BTNS
+
+// franchise + buy now modal button
+.fra-modbtn {
+  width: 121px;
+  height: 42px;
+
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  // fra-modbtn__mob
+  &__mob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8d24e;
+    width: 114px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: var(--accentBTN);
+    background-color: var(--accentBTN);
+  }
+  &:focus {
+    color: var(--whiteText);
+    background-color: var(--accentBTN);
+  }
+  &:disabled {
+    border-color: var(--disabledBTN);
+    background-color: var(--disabledBTN);
+    cursor: default;
+  }
+}
+
+// our location modal
+
+.location-modbtn {
+  width: 145px;
+  height: 42px;
+
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  background-color: #f8d24e;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  // location-modbtn__mob
+  &__mob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 134px;
+
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: var(--accentBTN);
+    background-color: var(--accentBTN);
+  }
+  &:focus {
+    color: var(--whiteText);
+    background-color: var(--accentBTN);
+  }
+  &:disabled {
+    border-color: var(--disabledBTN);
+    background-color: var(--disabledBTN);
+    cursor: default;
+  }
+}
+
+// ingredients modal button
+
+.ingred-modbtn {
+  width: 121px;
+  height: 42px;
+
+  border: solid 2px var(--BTN);
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: #f8d24e;
+
+  // ingred-modbtn__mob
+  &__mob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 132px;
+  }
+
+  transition: color var(--duration) var(--cubic),
+  background-color var(--duration) var(--cubic),
+  border-color var(--duration) var(--cubic);
+
+  &:hover {
+    border-color: var(--accentBTN);
+    background-color: var(--accentBTN);
+  }
+  &:focus {
+    color: var(--whiteText);
+    background-color: var(--accentBTN);
+  }
+  &:disabled {
+    border-color: var(--disabledBTN);
+    background-color: var(--disabledBTN);
+    cursor: default;
+  }
+}

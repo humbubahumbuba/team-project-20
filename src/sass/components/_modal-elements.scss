@@ -1,0 +1,152 @@
+.modal-form__picture {
+    border-radius: 50%;
+    width: 131px;
+    height: 131px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.picture-wrapper {
+    position: relative;
+    background-color: var(--tintIcecream);
+    width: 132px;
+    height: 138px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5.26027px 19.726px rgb(10 136 23 / 25%);
+}
+
+.modal-video {
+    width: 100%;
+    height: 199px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.about-video {
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(----blackText);
+}
+
+.calories-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 39px;
+}
+
+.calories-list__item {
+    width: 53px;
+    height: 72px;
+    border: 2px solid var(--modalGreen);
+    border-radius: 40px;
+}
+
+.calories-list__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 2.8;
+
+}
+
+.calories-list__item--values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modalGreen);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.ingredients-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.adress-link {
+    display: block;
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 134px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: var(--BTN);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.components-list {
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.components-list__item {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 1.7;
+}
+
+.modal-franch-text {
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.location-picture {
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:481px) {
+    .modal-video {
+        width: 448px;
+        height: 205px;
+        margin-bottom: 32px;
+    }
+
+    .calories-list {
+        gap: 20px;
+    }
+
+    .about-video {
+        font-size: 16px;
+    }
+
+    .modal-franch-text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .location-picture {
+        margin-bottom: 32px;
+    }
+
+    .adress-link {
+        width: 145px;
+        font-size: 14px;
+
+    }
+}
