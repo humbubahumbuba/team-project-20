@@ -3,21 +3,17 @@ new Swiper(".image-slider", {
         sensitivity: 1
     },
     autoplay: {
-        delay: 2000,
+        delay: 3300,
         disableOnInteraction: false
     },
-    // effect: 'flip',
-    // flipEffect: {
-    //   slideShadows: true,
-    //   limitRotation: true,
-    // },
     effect: "cube",
     flipEffect: {
         slideShadows: true,
         shadow: true,
         shadowOffset: 20,
         shadowScale: 0.94
-    }
+    },
+    loop: true
 });
 new Swiper(".reviews-slider", {
     pagination: {
@@ -26,7 +22,8 @@ new Swiper(".reviews-slider", {
     },
     mousewheel: {
         sensitivity: 1
-    }
+    },
+    autoHeight: true
 });
 
 //# sourceMappingURL=index.579125c3.js.map
